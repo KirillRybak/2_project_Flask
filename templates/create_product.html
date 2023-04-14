@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}
+Добавление товара
+{% endblock %}
+
+{% block content %}
+<style>
+    .center{
+        text-align: center;
+        color: white;
+    }
+</style>
+<div class="container">
+    <h1 class="center">Добавление товара</h1>
+    <form method="post">
+        <input type="text" name="title" id="title" class="form-control" placeholder="Введите название">
+        <input type="number" name="price" id="price" class="form-control" placeholder="Введите цену">
+        <input type="text" name="text" id="text" class="form-control" placeholder="Введите описание">
+        <button class="btn btn-dark">Разместить</button>
+    </form>
+
+</div>
+{% endblock %}
